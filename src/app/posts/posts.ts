@@ -1,3 +1,5 @@
+import {Post} from '../post/post';
+
 export const POSTS: Array<Post> = [
   {
     "userId": 1,
@@ -27,13 +29,6 @@ export const POSTS: Array<Post> = [
     "userId": 1,
     "id": 5,
     "title": "nesciunt quas odio",
-    "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+    "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
   }
 ];
-
-export class Post {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-}

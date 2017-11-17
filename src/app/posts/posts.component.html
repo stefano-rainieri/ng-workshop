@@ -1,7 +1,7 @@
 <section class="p-4">
   <article class="">
     <h2>
-      LAST NEWS : {{ last.title }}
+      LAST NEWS - {{ last.title }}
     </h2>
 
     <p class="text-muted">
@@ -10,9 +10,7 @@
   </article>
 
   <br/>
-
   <hr/>
-
   <br/><br/>
 
   <article *ngFor="let post of posts">
@@ -21,7 +19,8 @@
     </h2>
 
     <p class="text-muted">
-      {{ post.body }} <br/><br/>
+      {{ post.body }} <br/>
+      <a routerLink="/posts/{{ post.id }}">Leggi</a> <br/><br/>
     </p>
   </article>
 </section>

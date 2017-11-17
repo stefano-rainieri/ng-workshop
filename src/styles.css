@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+.nav-link {
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.4);
+}
+
+a:not([href]):not([tabindex]) {
+  color: #007bff;
+}
+
+ul li {
+  margin-right: 15px;
+  display: inline;
+  list-style-type: none;
+}
+
+.header-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.header-container .header-item {
+  align-self: center;
+}

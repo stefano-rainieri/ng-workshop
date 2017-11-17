@@ -1,0 +1,24 @@
+<section class="p-4">
+  <article>
+    <h2>
+      {{ post.title }}
+    </h2>
+
+    <p class="text-muted">
+      {{ post.body }} <br/>
+
+    </p>
+
+    <ul>
+      <li>
+        <button class="btn btn-link" (click)="goBack()">Go Back</button>
+      </li>
+
+      <li>
+        <button class="btn btn-link text-danger" (click)="toggleShowForm()">Modifica</button>
+      </li>
+    </ul>
+
+    <app-post-edit [hidden]="!showForm" [post]="post"></app-post-edit>
+  </article>
+</section>

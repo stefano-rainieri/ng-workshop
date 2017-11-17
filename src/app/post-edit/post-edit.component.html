@@ -1,0 +1,9 @@
+<form #myForm="ngForm">
+  <div class="form-group">
+    <input class="form-control" name="title" [(ngModel)]="post.title" required/>
+  </div>
+
+  <p class="text-right">
+    <button class="btn btn-link text-success" [disabled]="!myForm.valid">Save</button>
+  </p>
+</form>
